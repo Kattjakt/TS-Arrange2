@@ -74,7 +74,7 @@ export class NodeElementMappingHelper implements INodeElementMappingHandler {
     } else if (modifierFlags & ModifierFlags.Private) {
       visibilityType = ElementVisibilityType.Private;
     } else {
-      visibilityType = ElementVisibilityType.Unknown;
+      visibilityType = ElementVisibilityType.Public;
     }
 
     const result = new ElementVisibility(visibilityType);
